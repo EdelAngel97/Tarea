@@ -18,55 +18,29 @@ public class Circle {
         // TODO code application logic here
     }
     
-    private int id;
-    private String firstName;
-    private String lastName;
-    private int salary;
-   
-    public Circle(int id, String firstName, String lastName, int salary){
-        this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.salary = salary;
-    }
-    public int getid(){
-        return this.id;
-    }
+    private double radius;
     
-    public String getfirstName(){
-        return this.firstName;
+    public Circle(){
+        this.radius=1.0;
     }
-    
-    public String getlastName(){
-        return this.lastName;
+    public Circle(double radius){
+        this.radius=radius;
     }
-    
-    public String getName(){
-        return this.firstName + " " + this.lastName;
+    public double getRadius(){
+        return this.radius;
     }
-    
-    public int getsalary(){
-        return this.salary;
+    public void setRadius(double radius){
+        this.radius=radius;
     }
-    
-    public void setSalary(int salary){
-        this.salary = salary;
+    public double getArea(){
+        return Math.PI*Math.pow(this.radius, 2);
     }
-    
-    public int getAnnualSalary(){
-        return this.salary * 12;
+    public double getCircumference(){
+        return 2*Math.PI*this.radius;
     }
-    
-    public int raiseSalary(int percentage){
-        this.salary += this.salary * percentage/100;
-        
-        return this.salary;
-    }
-    
     @Override
     public String toString(){
-        return "Employee" + this.id + "name" + this.getName() + "salary" +
-                this.salary + "";
-    } 
+        return "Circle[radius="+this.radius+"]";
+}
 
 }
