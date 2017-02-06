@@ -69,7 +69,7 @@ public class MyCircle {
     
     @Override
     public String toString(){
-        return "My Circle[radius" + this.radius + "center" + center;
+        return "My Circle[radius" + this.radius + "center" + center + "]";
     }
     
     public double getArea(){
