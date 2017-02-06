@@ -26,7 +26,7 @@ public class MyRectangle {
         bottomRight = new MyPoint(x2,y2);
     }
     public MyRectangle(MyPoint topLeft, MyPoint bottomRight){ 
-        this.topLeft = topLeft;//
+        this.topLeft = topLeft;
         this.bottomRight = bottomRight;
     }
     @Override 
